@@ -115,17 +115,14 @@
     }
   }
 
-  .address {
+  /* .address {
     margin-left: auto;
     font-style: normal;
-
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
+  } */
 
   .address-list {
     display: flex;
+    flex-direction: row;
     gap: 40px;
   }
 

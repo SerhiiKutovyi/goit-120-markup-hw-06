@@ -315,12 +315,12 @@ input {
 
   .address {
     display: none;
-    margin-left: auto;
-    font-style: normal;
+    /* margin-left: auto;
+    font-style: normal; */
   }
 
   .address-list {
-    gap: 40px;
+    /* gap: 40px; */
   }
 
   .address-link {
