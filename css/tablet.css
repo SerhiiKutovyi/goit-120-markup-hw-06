@@ -1,12 +1,6 @@
 /**==========================================   Header   === */
 
 @media screen and (min-width: 768px) {
-  .header-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: initial;
-  }
-
   .header-nav {
     display: flex;
     align-items: center;
@@ -17,16 +11,12 @@
     gap: 40px;
   }
 
-  .burger-btn {
-    display: none;
-  }
-
   .header-logo {
     margin-right: 120px;
   }
 
-  .header-logo .logo-studio {
-    color: #2e2f42;
+  .burger-btn {
+    display: none;
   }
 
   .nav-link {
@@ -131,12 +121,14 @@
   }
 
   .address-link {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    display: block;
 
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -152,8 +144,7 @@
   /**====================================   Section Hero   ===*/
 
   .hero {
-    margin: 0 auto;
-    padding: 188px 0;
+    padding: 112px 0;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -170,9 +161,7 @@
   }
 
   .hero-title {
-    margin-right: auto;
-    margin-bottom: 48px;
-    margin-left: auto;
+    margin-bottom: 36px;
 
     max-width: 496px;
 
@@ -181,10 +170,6 @@
     letter-spacing: 0.02em;
 
     color: #fff;
-  }
-
-  .hero-btn {
-    margin: 0 auto;
   }
 
   /** ===============================   Section Operating principles   ===*/
