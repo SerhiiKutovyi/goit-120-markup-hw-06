@@ -176,31 +176,14 @@
 
   .operating-list {
     display: flex;
-    gap: 24px;
-  }
-
-  .operating-subtitle {
-    margin-bottom: 8px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 
   .operating-item {
-    width: calc((100% - 24px * 3) / 4);
-  }
-
-  .operating-wrapper-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 8px;
-
-    width: 264px;
-    height: 112px;
-
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-
-    background-color: #f4f4fd;
+    width: calc((100% - 24px * 1) / 2);
+    margin-bottom: 0;
   }
 
   /**================================    Section Team   ===*/

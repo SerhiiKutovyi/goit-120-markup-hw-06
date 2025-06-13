@@ -137,12 +137,7 @@
   /** ===============================   Section Operating principles   ===*/
 
   .operating-list {
-    display: flex;
     gap: 24px;
-  }
-
-  .operating-subtitle {
-    margin-bottom: 8px;
   }
 
   .operating-item {
