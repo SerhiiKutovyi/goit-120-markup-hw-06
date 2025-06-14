@@ -18,6 +18,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -47,10 +53,9 @@ input {
 }
 
 .section-subtitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 
   color: #2e2f42;
 }
@@ -82,14 +87,6 @@ input {
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
-  }
-
-  .section-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-
-    color: #2e2f42;
   }
 }
 
@@ -240,6 +237,10 @@ input {
     padding: 0;
 
     border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    fill: #2f2f37;
   }
 
   /* .nav-link {
@@ -362,7 +363,7 @@ input {
     color: #404bbf;
   } */
 
-  /**====================================   Section Hero   ===*/
+  /**================================   Section Hero   ===*/
 
   .hero {
     margin: 0 auto;
@@ -402,10 +403,16 @@ input {
     margin: 0 auto;
   }
 
-  /** ===============================   Section Operating principles   ===*/
+  /** =============================   Section Operating principles   ===*/
 
   .operating-subtitle {
     margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    text-align: center;
   }
 
   .operating-item:not(:last-child) {
@@ -416,24 +423,25 @@ input {
     display: none;
   }
 
-  /**================================    Section Team   ===*/
+  /**===============================    Section Team   ===*/
 
   .team {
     background: #f4f4fd;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
   }
 
   .team-title {
     margin-bottom: 72px;
   }
 
-  .team-list {
-    display: flex;
-    gap: 24px;
-  }
-
   .team-item {
-    width: calc((100% - 24px * 3) / 4);
-
+    max-width: 264px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -441,13 +449,8 @@ input {
     background-color: #fff;
   }
 
-  .team-img {
-    display: block;
-    max-width: 264px;
-  }
-
   .team-item-box {
-    padding: 32px 0px;
+    padding: 32px 16px;
   }
 
   .team-subtitle {
@@ -475,7 +478,7 @@ input {
     fill: #f4f4fd;
   }
 
-  /**====================================   Section Portfolio   ===*/
+  /**==============================   Section Portfolio   ===*/
 
   .portfolio-title {
     margin-bottom: 72px;
@@ -484,36 +487,20 @@ input {
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 48px;
   }
 
   .portfolio-item {
-    width: calc((100% - 24px * 2) / 3);
-
     cursor: pointer;
 
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: #fff;
-  }
-
-  .portfolio-item:hover,
-  .portfolio-item :focus {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
   .portfolio-item:hover .portfolio-hover-text {
     transform: translate(0);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .portfolio-img {
-    display: block;
   }
 
   .hover-text {
@@ -524,6 +511,7 @@ input {
   .portfolio-hover-text {
     position: absolute;
     top: 0;
+    left: 0;
 
     height: 100%;
 
@@ -544,7 +532,6 @@ input {
   }
 
   .portfolio-item-box {
-    width: 360px;
     padding: 32px 16px;
 
     border-bottom: 1px solid #e7e9fc;
@@ -552,7 +539,7 @@ input {
     border-right: 1px solid #e7e9fc;
   }
 
-  /**====================================   Footer   ===*/
+  /**===========================   Footer   ===*/
 
   .footer {
     background-color: #2e2f42;
