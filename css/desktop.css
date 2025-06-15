@@ -204,132 +204,24 @@
   /**====================================   Footer   ===*/
 
   .footer {
-    background-color: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
   .footer-wrapper {
-    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
     align-items: baseline;
+    max-width: 1158px;
   }
 
   .footer-logo-box {
     margin-right: 120px;
   }
 
-  .footer-logo {
-    display: inline-block;
-    margin-bottom: 16px;
-  }
-
-  .footer-logo .logo-studio {
-    color: #f4f4fd;
-  }
-
-  .footer-text {
-    max-width: 264px;
-
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-  }
-
-  .footer-list-icons {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-  }
-
-  .footer-link:hover,
-  .footer-link:focus {
-    background-color: #31d0aa;
-  }
-
-  .footer-icons {
-    fill: #f4f4fd;
-  }
-
-  .footer-icon-text {
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 16px;
-  }
-
   .footer-form-box {
-    margin-left: auto;
-  }
+    margin-left: 80px;
 
-  .footer-input-text {
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 16px;
-  }
-
-  .footer-form {
-    display: flex;
-    gap: 24px;
-  }
-
-  .footer-input {
-    padding: 8px 16px 8px 16px;
-
-    height: 40px;
-    width: 264px;
-
-    line-height: 2;
-
-    border: 1px solid#ffffff;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
-    color: #ffffff;
-  }
-
-  .footer-input::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: #31d0aa;
-  }
-
-  .footer-input:focus {
-    border: 1px solid #31d0aa;
-  }
-
-  .footer-form-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    min-width: 165px;
-    height: 40px;
-
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .footer-form-btn:hover,
-  .footer-form-btn:focus {
-    background-color: #31d0aa;
-    color: #4d5ae5;
-  }
-
-  .footer-submit-icon {
-    margin-left: 16px;
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    fill: #fff;
-  }
-
-  .footer-form-btn:hover > .footer-submit-icon,
-  .footer-form-btn:focus > .footer-submit-icon {
-    fill: #4d5ae5;
+    min-width: auto;
   }
 }
