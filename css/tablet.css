@@ -150,14 +150,17 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/dark-tab-bg.jpg);
 
-    max-width: 1440px;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(46, 47, 66, 0.7);
+    @media screen and (min-resolution: 2x) {
+      & {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/dark-tab-bg@2x.jpg);
+      }
+    }
   }
 
   .hero-title {

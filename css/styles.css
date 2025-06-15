@@ -373,7 +373,7 @@ input {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/dark-mob-bg.jpg);
 
     max-width: 1440px;
 
@@ -381,6 +381,16 @@ input {
     background-size: cover;
     background-position: center;
     background-color: rgba(46, 47, 66, 0.7);
+
+    @media screen and (min-resolution: 2x) {
+      & {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/dark-mob-bg@2x.jpg);
+      }
+    }
   }
 
   .hero-title {
@@ -618,16 +628,16 @@ input {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
     color: #ffffff;
-  }
 
-  .footer-input::placeholder {
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: #31d0aa;
-  }
+    &::placeholder {
+      line-height: 2;
+      letter-spacing: 0.04em;
+      color: #31d0aa;
+    }
 
-  .footer-input:focus {
-    border: 1px solid #31d0aa;
+    &:focus {
+      border: 1px solid #31d0aa;
+    }
   }
 
   .footer-form-btn {
@@ -643,12 +653,12 @@ input {
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  .footer-form-btn:hover,
-  .footer-form-btn:focus {
-    background-color: #31d0aa;
-    color: #4d5ae5;
+    &:hover,
+    &:focus {
+      background-color: #31d0aa;
+      color: #4d5ae5;
+    }
   }
 
   .footer-submit-icon {
