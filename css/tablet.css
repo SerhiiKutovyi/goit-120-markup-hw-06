@@ -150,7 +150,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/dark-tab-bg.jpg);
+      url(../images/background/dark-tab-bg.jpg);
 
     @media screen and (min-resolution: 2x) {
       & {
@@ -158,7 +158,7 @@
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
           ),
-          url(../images/dark-tab-bg@2x.jpg);
+          url(../images/background/dark-tab-bg@2x.jpg);
       }
     }
   }

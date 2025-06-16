@@ -31,7 +31,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/dark-desk-bg.jpg);
+      url(../images/background/dark-desk-bg.jpg);
 
     @media screen and (min-resolution: 2x) {
       & {
@@ -39,7 +39,7 @@
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
           ),
-          url(../images/dark-desk-bg@2x.jpg);
+          url(../images/background/dark-desk-bg@2x.jpg);
       }
     }
   }
@@ -79,6 +79,17 @@
     border-radius: 4px;
 
     background-color: #f4f4fd;
+  }
+
+  .astronauts {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #252952;
+    }
   }
 
   /**===========================   Section Team   ===*/

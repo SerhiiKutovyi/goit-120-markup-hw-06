@@ -373,7 +373,7 @@ input {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/dark-mob-bg.jpg);
+      url(../images/background/dark-mob-bg.jpg);
 
     max-width: 1440px;
 
@@ -388,7 +388,7 @@ input {
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
           ),
-          url(../images/dark-mob-bg@2x.jpg);
+          url(../images/background/dark-mob-bg@2x.jpg);
       }
     }
   }
