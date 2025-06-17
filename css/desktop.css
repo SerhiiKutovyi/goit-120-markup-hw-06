@@ -79,17 +79,19 @@
     border-radius: 4px;
 
     background-color: #f4f4fd;
-  }
 
-  .astronauts {
-    transition-property: background-color;
-    transition-duration: 250ms;
+    transition-property: transform background-color;
+    transition-duration: 350ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      background-color: #252952;
+      transform: scale(1.1);
     }
+  }
+
+  .astronauts:hover {
+    background-color: #252952;
   }
 
   /**===========================   Section Team   ===*/
@@ -114,16 +116,16 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    }
   }
 
   .portfolio-img {
     height: auto;
-  }
-
-  .portfolio-item:hover,
-  .portfolio-item :focus {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
   /**====================================   Footer   ===*/

@@ -141,6 +141,10 @@
     color: #404bbf;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   /**====================================   Section Hero   ===*/
 
   .hero {
