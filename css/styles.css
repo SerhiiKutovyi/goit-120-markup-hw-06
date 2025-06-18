@@ -138,7 +138,7 @@ input {
   background-color: transparent;
   outline: transparent;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition);
 }
 
 .section-button {
@@ -269,9 +269,7 @@ input {
 
   background-color: #fff;
 
-  transition-property: opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .mobile-menu.is-open {
@@ -343,9 +341,7 @@ input {
   text-align: left;
   text-transform: none;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
 
   &:hover,
   &:focus {
@@ -533,9 +529,7 @@ input {
 }
 
 .portfolio-item:hover .portfolio-hover-text {
-  transform: translate(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(0) var(--transition);
 }
 
 .hover-text {
@@ -557,9 +551,7 @@ input {
 
   transform: translateY(100%);
 
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 
 .portfolio-subtitle {
@@ -675,9 +667,7 @@ input {
   min-width: 165px;
   height: 40px;
 
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), color var(--transition);
 
   &:hover,
   &:focus {
@@ -689,10 +679,7 @@ input {
 .footer-submit-icon {
   margin-left: 16px;
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: fill var(--transition);
   fill: #fff;
 }
 
@@ -715,9 +702,7 @@ input {
   visibility: hidden;
   pointer-events: none;
 
-  transition-property: opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition), visibility var(--transition);
 
   background-color: rgba(46, 47, 66, 0.4);
 }
@@ -746,9 +731,7 @@ input {
 
   background-color: #fcfcfc;
 
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 
 @media screen and (min-width: 768px) {
@@ -770,9 +753,7 @@ input {
 
     background-color: #fcfcfc;
 
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition);
   }
 
   .span-wrapper {
@@ -854,7 +835,7 @@ input {
 
   height: 40px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition);
 }
 
 .modal-input:focus + .modal-icon {
@@ -871,9 +852,7 @@ input {
   transform: translateY(-50%);
   left: 16px;
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
 }
 
 .textarea-comment {
@@ -887,9 +866,7 @@ input {
 
   color: rgba(46, 47, 66, 0.4);
 
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition);
 }
 
 .modal-input:focus,
@@ -943,9 +920,8 @@ input {
 
   fill: transparent;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), border var(--transition),
+    fill var(--transition);
 }
 
 @media screen and (min-width: 768px) {
@@ -977,5 +953,5 @@ input {
 .form-send-btn {
   margin: 0 auto;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition);
 }

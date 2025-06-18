@@ -31,15 +31,14 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     color: #2e2f42;
-  }
-  .nav-link:hover,
-  .nav-link:focus {
-    color: #404bbf;
+
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+      color: #404bbf;
+    }
   }
 
   .nav-link.current {
@@ -60,11 +59,9 @@
 
     border-radius: 2px;
 
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     background-color: #404bbf;
+
+    transition: opacity var(--transition);
   }
 
   .nav-link.current::after {
@@ -127,15 +124,14 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     color: #434455;
-  }
-  .address-link:hover,
-  .address-link:focus {
-    color: #404bbf;
+
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+      color: #404bbf;
+    }
   }
 
   .mobile-menu {
