@@ -42,6 +42,10 @@ input {
   font-family: inherit;
 }
 
+address {
+  font-style: normal;
+}
+
 /*?============================================   COMMON   ===  */
 
 .container {

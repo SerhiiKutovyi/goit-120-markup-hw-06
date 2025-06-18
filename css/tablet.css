@@ -108,7 +108,6 @@
   .address {
     display: block;
     margin-left: auto;
-    font-style: normal;
   }
 
   .address-list {
@@ -188,6 +187,10 @@
   .operating-item {
     width: calc((100% - 24px * 1) / 2);
     margin-bottom: 0;
+  }
+
+  .operating-item:not(:last-child) {
+    margin-bottom: 0px;
   }
 
   /**============================    Section Team   ===*/
