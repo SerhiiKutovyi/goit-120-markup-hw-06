@@ -340,6 +340,10 @@ address {
   margin-bottom: 40px;
 }
 
+.studio {
+  color: #31d0aa;
+}
+
 .mobile-menu-nav-link {
   font-weight: 700;
   text-align: left;
@@ -355,6 +359,10 @@ address {
 
 .mobile-menu-address-item:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.email {
+  color: #31d0aa;
 }
 
 .mobile-menu-address-link {
